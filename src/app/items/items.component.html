@@ -1,0 +1,23 @@
+<h2>My Items</h2>
+<ul class="items">
+<li *ngFor="let items of items" (click)="onSelect(items)"
+    [class.selected]="items === selectedItem"
+    (click)="onSelect(items)">
+    <span class="badge">{{items.id}}</span> {{items.name}} {{items.price}}
+</li>
+</ul>
+
+<app-item-detail [items]="selectedItem"></app-item-detail>
+
+<div *ngIf="selectedItem">
+
+<h2>{{selectedItem.name | uppercase}} Details</h2>
+<div><span>id: </span>{{selectedItem.id}}</div>
+<div><span>price: </span>{{selectedItem.price}}</div>
+<div>
+    <label>name:
+        <input [(ngModel)]="selectedItem.name" placeholder="name"/>
+    </label>
+</div>
+
+</div>

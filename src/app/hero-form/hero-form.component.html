@@ -1,0 +1,25 @@
+<div class="form-group">
+    <form (ngSubmit)="onSubmit()" #heroForm="ngForm">
+    <label for="name">Name</label>
+    <input type="text" class="form-control" id="name"
+            required maxlength="20"
+            [(ngModel)]="model.name" name="name">
+    
+
+    <div class="form-group">
+    <label for="life">Life</label>
+    <input type="number"  class="form-control" id="life"
+    required
+            [(ngModel)]="model.life" name="life">
+    </div>
+
+    <div class="form-group">
+    <label for="strenght">Hero Strenght</label>
+    <input class="form-control" type="number"  id="strenght"
+            required
+            [(ngModel)]="model.strenght" name="strenght">
+
+    </div>
+    <button type="submit" class="btn btn-success" [disabled]="!heroForm.form.valid">Submit</button>
+    </form>
+</div>

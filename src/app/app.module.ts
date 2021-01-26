@@ -14,6 +14,9 @@ import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 import { HeroesComponent } from './heroes/heroes.component';
 import { HeroSearchComponent } from './hero-search/hero-search.component';
 import { MessagesComponent } from './messages/messages.component';
+import { ItemDetailComponent } from './item-detail/item-detail.component';
+import { ItemsComponent } from './items/items.component';
+import { HeroFormComponent } from './hero-form/hero-form.component';
 
 @NgModule({
   imports: [
@@ -35,7 +38,12 @@ import { MessagesComponent } from './messages/messages.component';
     HeroesComponent,
     HeroDetailComponent,
     MessagesComponent,
-    HeroSearchComponent
+    HeroSearchComponent,
+    ItemsComponent,
+    ItemDetailComponent,
+    HeroSearchComponent,
+    HeroFormComponent
+
   ],
   bootstrap: [ AppComponent ]
 })

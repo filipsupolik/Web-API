@@ -1,7 +1,9 @@
 import { Item } from './items';
 export interface Hero {
-    id: number;
+    id?: number;
     name: string;
     item: Item[];
     money: number;
+    life: number;
+    strenght: number;
   }

@@ -9,7 +9,7 @@ import { Item } from '../items';
 
 export class ItemDetailComponent implements OnInit {
  
-  @Input() items: Item | undefined;
+  @Input() items: Item;
   
   constructor() { }
 

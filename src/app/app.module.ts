@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
@@ -17,10 +18,13 @@ import { MessagesComponent } from './messages/messages.component';
 import { ItemDetailComponent } from './item-detail/item-detail.component';
 import { ItemsComponent } from './items/items.component';
 import { HeroFormComponent } from './hero-form/hero-form.component';
+import { LoginComponent } from './login/login.component';
+import { UserComponent } from './user/user.component';
 
 @NgModule({
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     FormsModule,
     AppRoutingModule,
     HttpClientModule,
@@ -42,7 +46,9 @@ import { HeroFormComponent } from './hero-form/hero-form.component';
     ItemsComponent,
     ItemDetailComponent,
     HeroSearchComponent,
-    HeroFormComponent
+    HeroFormComponent,
+    LoginComponent,
+    UserComponent
 
   ],
   bootstrap: [ AppComponent ]

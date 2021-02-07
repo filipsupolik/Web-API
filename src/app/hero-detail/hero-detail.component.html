@@ -1,11 +1,21 @@
 <div *ngIf="hero">
   <h2>{{hero.name | uppercase}} Details</h2>
   <div><span>id: </span>{{hero.id}}</div>
+  <div><span>money: </span>{{hero.money}}</div>
+  <div><span>life: </span>{{hero.life}}</div>
+  <div><span>strength: </span>{{hero.strenght}}</div>
+  <div><span>items: </span>{{hero.item}}</div>
+  <ul>
+    <li *ngFor="let item of hero.item">
+      <span>{{item.id}}</span> {{item.name}}
+    </li>
+  </ul>
   <div>
     <label>name:
       <input [(ngModel)]="hero.name" placeholder="name"/>
     </label>
   </div>
   <button (click)="goBack()">go back</button>
+  <button><a routerLink="/buyitem/{{hero.id}}">Buy Item</a></button>
   <button (click)="save()">save</button>
 </div>

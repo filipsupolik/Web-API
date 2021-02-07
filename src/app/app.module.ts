@@ -20,6 +20,8 @@ import { ItemsComponent } from './items/items.component';
 import { HeroFormComponent } from './hero-form/hero-form.component';
 import { LoginComponent } from './login/login.component';
 import { UserComponent } from './user/user.component';
+import { ItemFormComponent } from './item-form/item-form.component';
+import { ItemsSearchComponent } from './item-search/item-search.component';
 
 @NgModule({
   imports: [
@@ -48,7 +50,9 @@ import { UserComponent } from './user/user.component';
     HeroSearchComponent,
     HeroFormComponent,
     LoginComponent,
-    UserComponent
+    UserComponent,
+    ItemFormComponent,
+    ItemsSearchComponent
 
   ],
   bootstrap: [ AppComponent ]

@@ -16,3 +16,8 @@
     <input type="text"  class="form-control"
            required 
            [(ngModel)]="model.price" name="money">
+    </div>   
+    
+    <button type="submit" class="btn btn-success" [disabled]="!heroForm.form.valid">Submit</button>
+    </form>
+</div>
